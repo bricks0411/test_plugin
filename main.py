@@ -28,18 +28,20 @@ class RussianRoulette(Star):
     @filter.command("add")
     async def GetSum(self, event: AstrMessageEvent):
         args = event.message_str.strip().split()
-        if len(args) != 3:
+
+        if len(args) != 2:
             yield event.plain_result("用法：/add <a> <b>")
             return
-        
+
         try:
             a = int(args[0])
-            b=  int(args[1])
+            b = int(args[1])
         except ValueError:
             yield event.plain_result("参数必须是整数")
             return
-        
+
         yield event.plain_result(f"结果是：{a + b}。")
+
         
 
     async def terminate(self):
