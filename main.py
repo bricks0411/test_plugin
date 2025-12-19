@@ -31,7 +31,7 @@ class RussianRoulette(Star):
 
     @filter.command("sub")
     async def GetMinus(self, event: AstrMessageEvent, a: int, b: int):
-        yield event.piain_result(f"结果是：{a + b}！")
+        yield event.plain_result(f"结果是：{a - b}！")
 
     async def terminate(self):
         """可选择实现异步的插件销毁方法，当插件被卸载/停用时会调用。"""
