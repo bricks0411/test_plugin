@@ -39,21 +39,33 @@ class RussianRoulette(Star):
     async def Fake_say(self, event: AstrMessageEvent, a: int, b: int):
         messages = event.get_messages()
 
+        logger.debug(
+            f"[fake_say] 收到消息 | "
+            f"session={event.session_id} | "
+            f"sender={event.get_sender_name()} | "
+            f"chain={messages}"
+        )
+
         if len(messages) < 2:
+            logger.debug("[fake_say] 消息长度不足，忽略")
             return
         
         if not isinstance(messages[0], At):
+            logger.debug("[fake_say] 不是 At 消息，忽略")
             return
         
         if not isinstance(messages[1], Plain):
+            logger.debug("[fake_say] 不是文本消息，忽略")
             return
         
         text = messages[1].text.strip()
         if not text.startswith("说"):
+            logger.debug("[fake_say] 不是以“说”开头，忽略")
             return
         
         content = text[1:].strip()
         if not content:
+            logger.debug("[fake_say] 发送失败！内容为空。")
             yield event.plain_result("内容不能为空！")
             return
         
@@ -65,6 +77,7 @@ class RussianRoulette(Star):
             content = [Plain(content)]
         )
 
+        logger.debug("[fake_say] 发送消息...")
         yield event.chain_result([node])
 
 
