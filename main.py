@@ -5,9 +5,10 @@ from astrbot.api.message_components import At, Plain, Node
 
 TRIGGERS_GOOD_NIGHT = {
     "晚安",
-    "安",
     "goodnight",
     "Goodnight",
+    "good night",
+    "Good night",
     "晚安咯",
     "wanan"
 }
@@ -53,7 +54,7 @@ class RussianRoulette(Star):
             "\n（小声）\n"
             "……晚安。要是做梦的话，也给我做个像样点的。"
         )
-        yield event.plain_result(result) # 发送一条纯文本消息
+        yield event.plain_result(result)                   # 发送一条纯文本消息
 
     @filter.command("add")
     async def GetSum(self, event: AstrMessageEvent, a: int, b: int):
