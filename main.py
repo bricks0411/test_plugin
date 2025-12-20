@@ -35,7 +35,7 @@ class RussianRoulette(Star):
         yield event.plain_result(f"结果是：{a - b}！")
 
     @filter.event_message_type(filter.EventMessageType.GROUP_MESSAGE)
-    async def Fake_say(self, event: AstrMessageEvent):
+    async def Fake_say(self, event: AstrMessageEvent, *args):
         messages = event.get_messages()
 
         logger.debug(
