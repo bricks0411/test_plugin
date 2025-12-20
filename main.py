@@ -78,8 +78,8 @@ class RussianRoulette(Star):
 
         logger.info(
             f"[fake_say] 触发伪造发言 | "
-            f"target_uin={at.qq} | "
-            f"target_name={at.name} | "
+            f"target_uin={at_target.qq} | "
+            f"target_name={at_target.name} | "
             f"content={content}"
         )
         yield event.chain_result([node])
