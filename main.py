@@ -48,7 +48,7 @@ class RussianRoulette(Star):
         # 消息内容
         content_parts = []
         # 机器人账号
-        bot_id = event.context.self_id
+        bot_id = self.context.self_id
         # 解析消息，并判断消息合法性
         for msg in messages:
             if isinstance(msg, At):
