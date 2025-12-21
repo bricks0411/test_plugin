@@ -47,6 +47,8 @@ class RussianRoulette(Star):
         target_at = None
         # 消息内容
         content_parts = []
+        # 机器人账号
+        bot_id = self.context.self_id
         # 解析消息，并判断消息合法性
         for msg in messages:
             if isinstance(msg, At):
@@ -55,7 +57,7 @@ class RussianRoulette(Star):
                     yield event.plain_result("只能 @ 一个用户！")
                     return
                 # 若艾特的是机器人，则忽略掉
-                if msg.qq == event.self_id:
+                if msg.qq == bot_id:
                     continue
                 target_at = msg
             elif isinstance(msg, Plain):
