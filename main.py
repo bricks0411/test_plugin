@@ -57,7 +57,7 @@ class RussianRoulette(Star):
                 content_parts.append(msg.text)
         # 检查是否为 @bot 后跟 @目标用户
         if len(at_list) != 2:
-            yield event.plain_result("用法：@我 /说 @目标用户 内容")
+            yield event.plain_result("谁让你艾特我了，哼(｀ω´ )")
             return
         # 获取目标用户
         target_at = at_list[1]
