@@ -56,8 +56,11 @@ class RussianRoulette(Star):
             elif isinstance(msg, Plain):
                 content_parts.append(msg.text)
         # 检查是否为 @bot 后跟 @目标用户
-        if len(at_list) != 2:
+        if len(at_list) < 2:
             yield event.plain_result("谁让你艾特我了，哼(｀ω´ )")
+            return
+        elif len(at_list) > 2:
+            yield event.plain_result("一次只能艾特一个人！")
             return
         # 获取目标用户
         target_at = at_list[1]
