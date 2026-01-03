@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://count.getloli.com/@Brick0411andhisbot?name=Brick0411andhisbot&theme=booru-lisu&padding=7&offset=0&align=center&scale=0.8&pixelated=1&darkmode=1" alt="Moe Counter">
+  <img src="https://count.getloli.com/@Brick0411andhisbot?name=Brick0411andhisbot&theme=booru-lisu&padding=10&offset=0&align=center&scale=0.8&pixelated=1&darkmode=1" alt="Moe Counter">
 </p>
 
 # 群聊扫把星（test_plugin）
