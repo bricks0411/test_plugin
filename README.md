@@ -1,8 +1,18 @@
+<center>
+
+# 群聊扫把星（ChatBanter）
+
+</center>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-AGPL_3.0-blue.svg" alt="License: AGPL-3.0">
+  <img src="https://img.shields.io/badge/Python-3.10+-yellow.svg" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/AstrBot-v4.x.x-orange.svg" alt="AstrBot v4.x.x">
+</p>
+
 <p align="center">
   <img src="https://count.getloli.com/@Brick0411andhisbot?name=Brick0411andhisbot&theme=booru-lisu&padding=10&offset=0&align=center&scale=0.8&pixelated=1&darkmode=1" alt="Moe Counter">
 </p>
-
-# 群聊扫把星（ChatBanter）
 
 一个基于 **AstrBot v4.x** 的群聊娱乐插件，支持**每日运势**、**迫害群友**和**特殊问候**等功能。
 
@@ -36,10 +46,10 @@ $2026$ 年 $1$ 月 $3$ 日 - 第 $1$ 版项目上传。
 
 - 指令：
 
-  ```
+```
   /今日运势
   /运势
-  ```
+```
 
 - 功能说明：
 
@@ -53,24 +63,24 @@ $2026$ 年 $1$ 月 $3$ 日 - 第 $1$ 版项目上传。
 
 示例输出：
 
-```
+  ```
 【今日运势】
 用户：Alice
 🍀 今日人品：88
 📈 运势：中吉
 ✅ 宜：摸鱼
 ❌ 忌：加班
-```
+  ```
 
 #### 今日运势排行榜
 
 - 指令：
 
-  ```
+```
   /运势排行
   /今日运势排行
   /运势排行榜
-  ```
+```
 
 - 功能说明：
 
@@ -81,13 +91,13 @@ $2026$ 年 $1$ 月 $3$ 日 - 第 $1$ 版项目上传。
 
 功能示例：
 
-```
+  ```
 【今日运势排行榜】
 🥇 Alice  99
 🥈 Bob    92
 🥉 Carol  87
 4️⃣ Dave   76
-```
+  ```
 
 #### 特殊问候
 
@@ -101,9 +111,9 @@ $2026$ 年 $1$ 月 $3$ 日 - 第 $1$ 版项目上传。
 
 - 指令格式：
 
-  ```
+```
   @Bot /说 @某人 内容
-  ```
+```
 
 - 功能说明：
 
