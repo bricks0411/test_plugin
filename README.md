@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://count.getloli.com/@Clhikariproject2?name=Clhikariproject2&theme=booru-touhoulat&padding=7&offset=0&align=center&scale=0.8&pixelated=1&darkmode=1" alt="Moe Counter">
+</p>
+
 # 群聊扫把星（test_plugin）
 
 一个基于 **AstrBot v4.x** 的群聊娱乐插件，用于学习与演示插件开发，包含群互动、每日运势、排行榜等功能。
