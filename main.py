@@ -33,10 +33,11 @@ TRIGGERS_GOOD_MORNING = {
 
 # 插件信息注册
 @register(
-    "ChatBanter", 
-    "Bricks0411", 
-    "群聊娱乐小插件，包含迫害群友、特殊问候和今日运势等功能。", 
-    "0.0.5"
+    name = "ChatBanter", 
+    author = "Bricks0411", 
+    desc = "群聊娱乐小插件，包含迫害群友、特殊问候和今日运势等功能。", 
+    version = "0.0.5",
+    repo = "https://github.com/bricks0411/ChatBanter.git"
 )
 
 class ChatBanter(Star):
@@ -240,7 +241,10 @@ class ChatBanter(Star):
         # evaluation = await call_LLM_api(prompt)
         # result += f"\n📝 今日评价：{evaluation}"
 
-        fortune_result = await call_llm(prompt)
+        fortune_result = await self.context.llm_generate(
+            chat_provider = provider_id,
+            prompt = prompt,
+        )
 
         # 额外逻辑：若为大吉，则诸事皆宜
         if luck_value >= 90:
@@ -254,7 +258,7 @@ class ChatBanter(Star):
             f"📈 运势：{luck_level}\n"
             f"✅ 宜：{good}\n"
             f"❌ 忌：{bad}\n"
-            f"📝 今日评价：{fortune_result}\n"
+            f"📝 今日评价：{fortune_result.completion_text}\n"
         )
 
         yield event.plain_result(result)
