@@ -39,7 +39,7 @@ $2026$ 年 $1$ 月 $3$ 日 - 第 $1$ 版项目上传。
 - **插件名**：ChatBanter
 - **作者**：Bricks0411
 - **版本**：0.0.3
-- **适配框架**：AstrBot v4.9.0
+- **适配框架**：AstrBot v4.x.x
 - **平台**：NapCat / aiocqhttp（WebSocket 反向连接）
 
 ## 功能列表
