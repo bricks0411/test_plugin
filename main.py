@@ -37,7 +37,7 @@ TRIGGERS_GOOD_MORNING = {
     "astrbot_plugin_chat_banter", 
     "Bricks0411", 
     "群聊娱乐小插件，包含迫害群友、特殊问候和今日运势等功能，支持WebUI配置。", 
-    "v0.0.7",
+    "v0.1.0",
 )
 
 class ChatBanter(Star):
